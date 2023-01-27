@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: log all the context
         uses: actions/github-script@v6
-          with:
-            script: |
-              console.log(JSON.stringify(github.context.payload, null, 2))
+        with:
+          script: |
+            console.log(JSON.stringify(github.context.payload, null, 2))
