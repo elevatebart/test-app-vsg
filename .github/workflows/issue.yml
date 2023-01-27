@@ -2,7 +2,10 @@ name: Set issues with a PR to In Progress (From PR)
 on:
   pull_request:
     types:
-      - [opened, edited, reopened]
+      - opened
+      - edited
+      - reopened
+      - labeled
 
 
 jobs:

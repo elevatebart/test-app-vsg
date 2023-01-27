@@ -2,7 +2,8 @@ name: Set issues with a PR to In Progress (From Issues)
 on:
   issues:
     types:
-      - [edited]
+      - edited
+      - labeled
 
 
 jobs:
