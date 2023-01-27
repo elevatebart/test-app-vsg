@@ -1,6 +1,6 @@
 name: Set issues with a PR to In Progress (From Issues)
 on:
-  issue:
+  issues:
     types:
       - [edited]
 
