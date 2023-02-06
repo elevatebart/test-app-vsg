@@ -1,0 +1,14 @@
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: '39,40,41,42,43 * * * *'
+
+jobs:
+  # deploy to cloudflare pages
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - runs: echo "Hello World"
+      - runs: echo "The head_ref is ${{ github.head_ref }}"
+      - runs: echo "The sha is ${{ github.sha }}"
