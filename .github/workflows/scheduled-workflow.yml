@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - runs: echo "Hello World"
-      - runs: echo "The head_ref is ${{ github.head_ref }}"
-      - runs: echo "The sha is ${{ github.sha }}"
+      - run: echo "Hello World"
+      - run: echo "The head_ref is ${{ github.head_ref }}"
+      - run: echo "The sha is ${{ github.sha }}"
